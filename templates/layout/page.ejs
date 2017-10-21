@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= blocks.title %></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="3rdparty/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+
+    <script src="3rdparty/jquery/jquery.min.js"></script>
+    <script src="3rdparty/bootstrap/js/bootstrap.min.js"></script>
+    <%- blocks.scripts -%>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center title">instagib.io</h1>
+        <div class="div-center">
+            <%- body -%>
+        </div>
+    </div>
+</body>
+</html>

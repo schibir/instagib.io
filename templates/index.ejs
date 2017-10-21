@@ -1,0 +1,16 @@
+
+<% layout("./layout/page") -%>
+<% block("title", "instagib.io"); -%>
+<% block("scripts", "<script src='app.js'></script>"); -%>
+
+<h1 class="text-center">Welcome to instagib.io</h1>
+
+<form class="form-inline form-nickname" role="form" id="nick-form">
+    <div class="form-group">
+        <input type="text" class="form-control input-lg" id="nickname" placeholder="Nickname" autofocus>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Play</button>
+</form>
+<div id="loading">
+    <h1 class="text-center">Loading...</h1>
+</div>

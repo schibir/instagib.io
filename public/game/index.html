@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>instagib.io</title>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="3rdparty/game-shim.js"></script>
+        <script type="text/javascript" src="3rdparty/gl-matrix-min.js"></script>
+        <script type="text/javascript" src="3rdparty/howler.min.js"></script>
+        <script type="text/javascript" src="polyfill.js"></script>
+
+        <script type="text/javascript" src="/common/libs/event.js"></script>
+        <script type="text/javascript" src="/common/libs/utility.js"></script>
+        <script type="text/javascript" src="/common/libs/vector.js"></script>
+        <script type="text/javascript" src="/common/libs/buffer.js"></script>
+        <script type="text/javascript" src="/common/libs/nickGenerator/dict.js"></script>
+        <script type="text/javascript" src="/common/libs/nickGenerator/index.js"></script>
+
+        <script type="text/javascript" src="/common/game/global.js"></script>
+
+        <script type="text/javascript" src="/common/objects/dynent.js"></script>
+        <script type="text/javascript" src="/common/objects/bullet.js"></script>
+        <script type="text/javascript" src="/common/objects/weapon.js"></script>
+        <script type="text/javascript" src="/common/objects/item.js"></script>
+        <script type="text/javascript" src="/common/objects/bot.js"></script>
+        <script type="text/javascript" src="/common/objects/event.js"></script>
+
+        <script type="text/javascript" src="/common/level/bridges.js"></script>
+        <script type="text/javascript" src="/common/level/gener.js"></script>
+        <script type="text/javascript" src="/common/level/ai.js"></script>
+        <script type="text/javascript" src="/common/level/level.js"></script>
+
+        <script type="text/javascript" src="/common/game/aibot.js"></script>
+        <script type="text/javascript" src="/common/game/transport.js"></script>
+        <script type="text/javascript" src="/common/game/gameplay.js"></script>
+        <script type="text/javascript" src="/common/game/game.js"></script>
+
+        <script type="text/javascript" src="/common/room.js"></script>
+
+        <script type="text/javascript" src="engine/utility.js"></script>
+        <script type="text/javascript" src="engine/console.js"></script>
+        <script type="text/javascript" src="engine/shader.js"></script>
+        <script type="text/javascript" src="engine/texture.js"></script>
+        <script type="text/javascript" src="engine/FBO.js"></script>
+        <script type="text/javascript" src="engine/render_text.js"></script>
+
+        <script type="text/javascript" src="client/sound.js"></script>
+        <script type="text/javascript" src="client/dynent.js"></script>
+        <script type="text/javascript" src="client/weapon.js"></script>
+        <script type="text/javascript" src="client/particles.js"></script>
+        <script type="text/javascript" src="client/bullet.js"></script>
+        <script type="text/javascript" src="client/bot.js"></script>
+        <script type="text/javascript" src="client/item.js"></script>
+        <script type="text/javascript" src="client/hud.js"></script>
+        <script type="text/javascript" src="client/decal.js"></script>
+        <script type="text/javascript" src="client/bridges.js"></script>
+        <script type="text/javascript" src="client/level.js"></script>
+        <script type="text/javascript" src="client/debug.js"></script>
+        <script type="text/javascript" src="client/fakesocket.js"></script>
+        <script type="text/javascript" src="client/game.js"></script>
+
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body> 
+        <div id="viewport-frame">
+            <canvas id="canvas" width="800" height="600">
+                <div style="text-align: center; vertical-align: middle;">
+                    Ваш браузер не поддерживает даже canvas, пожалуйста, скачайте 
+                    <a href="https://www.google.ru/intl/ru/chrome/browser/" target="_blank">
+                        нормальный браузер
+                    </a>, ну или
+                    <a href="http://www.mozilla.org/ru/firefox/new/" target="_blank">
+                         этот.
+                    </a>
+                </div>
+            </canvas>
+        </div>
+        <div id="webgl-error" style="display: none; text-align: center; vertical-align: middle;">
+            Sorry, but your browser does not support WebGL or does not have it enabled.<br/>
+            To get a WebGL-enabled browser, please see:<br/>
+            <a href="http://get.webgl.org/" target="_blank">
+               http://get.webgl.org/
+            </a>
+        </div>
+        <div id="viewport-info">
+            <div id="config">
+                <ul id="navlist">
+                    <li><input id="sens" type="range" min="0" max="100" value="50" /><b>Sensitivity</b></li>
+                    <li>
+                        <input type="checkbox" id="sounds" />
+                        <label for="sounds"><span></span><b>Sounds</b></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="highQuality" checked/>
+                        <label for="highQuality"><span></span><b>High quality</b></label>
+                    </li>
+                    <li><img src="fullscreen.png" id="fullscreenBtn"/><b>Fullscreen</b></li>
+                </ul>
+            </div>
+        </div>
+    </body> 
+</html>

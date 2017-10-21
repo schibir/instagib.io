@@ -1,0 +1,29 @@
+
+body
+{
+    background: #ffffb3;
+}
+
+.form-nickname
+{
+    text-align: center;
+}
+
+.title
+{
+    font-size: 80px;
+    color: #a83;
+}
+
+.div-center
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading
+{
+    display: none;
+}

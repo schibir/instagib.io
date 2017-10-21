@@ -1,0 +1,23 @@
+{
+    "master-server": 
+    {
+        "port": 80,
+        "port-for-game-server": 8080,
+        "host-for-game-server": "localhost",
+        "timeout-broadcast": 500
+    },
+    "game-server":
+    {
+        "start-websocket-port": 5900,
+        "max-memory-usage": 1000000000,
+        "timeout-for-destroy-room": 30000,
+        "item-respawn-time": 5000,
+        "update-time": 50,
+        "looserseria": 5,
+        "killseria": 5,
+        "ratingkoef": 15,
+        "ratingdiap": 1000,
+        "multikilltime": 2000,
+        "quicktime": 2000
+    }
+}

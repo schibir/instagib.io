@@ -1,0 +1,33 @@
+{
+  "name": "instagib.io",
+  "version": "1.0.0",
+  "description": "instagib.io",
+  "main": "master-server.js",
+  "scripts": {
+    "test-room": "cross-env NODE_PATH=. node test/room-test.js",
+    "test-game": "cross-env NODE_PATH=. npm run game-server-test",
+    "game": "cross-env NODE_PATH=. npm run game-start",
+    "master": "cross-env NODE_PATH=. node master-server.js",
+    "test-fs": "cross-env NODE_PATH=. node test/fakesocket.js",
+    "test-net": "cross-env NODE_PATH=. node test/net.js",
+    "game-start": "cross-env NODE_PATH=. node game-server/index.js --game-server:port-for-room=8000",
+    "game-server-test": "node test/game-server-test.js --master-server:port-for-game-server=8088 --master-server:host-for-game-server=localhost --game-server:port-for-room=8089"
+  },
+  "keywords": [
+    "instagib.io"
+  ],
+  "author": "Sergey Chibiryaev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1",
+    "nconf": "^0.8.4",
+    "winston": "^2.3.1",
+    "ws": "^2.2.2"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.4"
+  }
+}
