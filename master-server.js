@@ -31,13 +31,8 @@ router.get('/', function(req, res, next)
     res.render("index");
 });
 
-router.use("/common", function(req, res, next)
+function getFile(filename, res)
 {
-    var game_server = path.join(__dirname, "game-server");
-    var room = path.join(game_server, "room");
-    var common = path.join(room, "common");
-    var filename = path.join(common, req.url);
-
     fs.exists(filename, function(exists)
     {
         function error(status, message)
@@ -59,9 +54,33 @@ router.use("/common", function(req, res, next)
                 res.write(file, "binary");
                 res.end();
             }
+            else if (path.extname(filename) === ".css")
+            {
+                res.writeHead(200, {"Content-Type": "text/css"});
+                res.write(file, "binary");
+                res.end();
+            }
             else return error(403, "Access denied");
         });
     });
+}
+
+router.use("/3rdparty", function(req, res, next)
+{
+    var folder = path.join(__dirname, "bower_components");
+    var filename = path.join(folder, req.url);
+
+    getFile(filename, res);
+});
+
+router.use("/common", function(req, res, next)
+{
+    var game_server = path.join(__dirname, "game-server");
+    var room = path.join(game_server, "room");
+    var common = path.join(room, "common");
+    var filename = path.join(common, req.url);
+
+    getFile(filename, res);
 });
 
 router.post("/login", function(req, res, next)
