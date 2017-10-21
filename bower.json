@@ -1,0 +1,28 @@
+{
+  "name": "instagib.io",
+  "description": "instagib.io",
+  "main": "master-server.js",
+  "authors": [
+    "Sergey Chibiryaev"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "instagib.io"
+  ],
+  "homepage": "https://github.com/schibir/instagib.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "howler.js": "^2.0.5",
+    "game-shim": "https://github.com/toji/game-shim.git",
+    "gl-matrix": "^2.4.0"
+  }
+}

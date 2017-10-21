@@ -17,7 +17,7 @@
     "instagib.io"
   ],
   "author": "Sergey Chibiryaev",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
     "ejs-locals": "^1.0.2",
