@@ -22,7 +22,7 @@
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
     "howler.js": "^2.0.5",
-    "game-shim": "https://github.com/toji/game-shim.git",
+    "game-shim": "https://github.com/schibir/game-shim.git",
     "gl-matrix": "^2.4.0"
   }
 }
