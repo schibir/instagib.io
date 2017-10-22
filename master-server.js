@@ -122,6 +122,18 @@ app.use(function(err, req, res, next)
     res.render("error");
 });
 
+// check folder bower and node_modules
+if (!fs.existsSync(path.join(__dirname, "bower_components")))
+{
+    log.error("Bower components is not installed. Please run the commands:\nnpm install -g bower\nbower install");
+    process.exit(0);
+}
+if (!fs.existsSync(path.join(__dirname, "node_modules")))
+{
+    log.error("Node modules is not installed. Please run the command:\nnpm install");
+    process.exit(0);
+}
+
 http.createServer(app).listen(config.get("master-server:port"), function()
 {
     log.info("Ok, ", config.get("master-server:port"));
