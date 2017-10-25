@@ -75,7 +75,10 @@ function GameInstance(port_for_room, room_path)
         }
         callback_for_create_new_room = callback;
 
-        roomProcess(42, 2);
+        const seed = parseInt(config.get("game-server:seed"));
+        const size = parseInt(config.get("game-server:size"));
+
+        roomProcess(seed, size);
     }
 
     function canCreateNewRoom(callback)

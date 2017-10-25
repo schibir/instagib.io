@@ -18,6 +18,8 @@
         "ratingkoef": 15,
         "ratingdiap": 1000,
         "multikilltime": 2000,
-        "quicktime": 2000
+        "quicktime": 2000,
+        "seed": 42,
+        "size": 2
     }
 }
