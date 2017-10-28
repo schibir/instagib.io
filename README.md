@@ -1,6 +1,8 @@
 # instagib.io
 Online 2D shooter
 
+http://instagib.io
+
 How do I get set up?
 
 * npm install -g bower
