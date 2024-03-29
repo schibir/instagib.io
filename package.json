@@ -19,15 +19,15 @@
   "author": "Sergey Chibiryaev",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.20.2",
     "ejs-locals": "^1.0.2",
-    "express": "^4.14.1",
-    "morgan": "^1.8.1",
-    "nconf": "^0.8.4",
-    "winston": "^2.3.1",
-    "ws": "^2.2.2"
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nconf": "^0.12.1",
+    "winston": "^3.13.0",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
-    "cross-env": "^3.2.4"
+    "cross-env": "^7.0.3"
   }
 }
